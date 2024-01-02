@@ -24,26 +24,26 @@ def conversion_calculator():
         converted_temp = initial_temp -273.15
         print(math.ceil(converted_temp*pow(10,2))/pow(10,2))
     def K_to_F(initial_temp):
-        converted_temp = (initial_temp - 273.15) * 1.8 + 32
+        converted_temp = (initial_temp - 273.15) * 1.8 + 3278
         print(math.ceil(converted_temp*pow(10,2))/pow(10,2))
     #the if else statements to use the functions
-    if temp == "F" and new_temp == "C":
+    if temp == "F".lower() and new_temp == "C".lower():
         F_to_C(initial_temp)
-    elif temp == "F" and new_temp == "K":
+    elif temp == "F".lower() and new_temp == "K".lower():
         F_to_K(initial_temp)
-    elif temp == "C" and new_temp == "F":
+    elif temp == "C".lower() and new_temp == "F".lower():
         C_to_F(initial_temp)
-    elif temp == "C" and new_temp == "K":
+    elif temp == "C".lower() and new_temp == "K".lower():
         C_to_K(initial_temp)
-    elif temp == "K" and new_temp == "F":
+    elif temp == "K".lower() and new_temp == "F".lower():
         K_to_F(initial_temp)
-    elif temp == "K" and new_temp == "C":
+    elif temp == "K".lower() and new_temp == "C".lower():
         K_to_C(initial_temp)
     else :
         print("you have something wrong please read through the prompt for each step and try again")
     #a rerun command to ask if you want to convert more things
     rerun = input("Would you like to put in a new temperature? Y for yes or N for no: ")
-    if rerun == "Y":
+    if rerun == "Y".lower():
         conversion_calculator()
     else:
         print("thanks for using the Conversion calculator")
