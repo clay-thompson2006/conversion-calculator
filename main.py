@@ -39,6 +39,8 @@ def conversion_calculator():
         K_to_F(initial_temp)
     elif temp == "K" and new_temp == "C":
         K_to_C(initial_temp)
+    else :
+        print("you have something wrong please read through the prompt for each step and try again")
     #a rerun command to ask if you want to convert more things
     rerun = input("Would you like to put in a new temperature? Y for yes or N for no: ")
     if rerun == "Y":
