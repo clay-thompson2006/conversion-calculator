@@ -10,22 +10,22 @@ def conversion_calculator():
 
     def C_to_F(initial_temp):
         converted_temp = initial_temp * (9/5) +32
-        print(converted_temp)
+        print(math.ceil(converted_temp*pow(10,2))/pow(10,2))
     def C_to_K(initial_temp):
         converted_temp = initial_temp +273.15
-        print(converted_temp)
+        print(math.ceil(converted_temp*pow(10,2))/pow(10,2))
     def F_to_C(initial_temp):
         converted_temp = (initial_temp - 32) * (5/9)
-        print(converted_temp)
+        print(math.ceil(converted_temp*pow(10,2))/pow(10,2))
     def F_to_K(initial_temp):
         converted_temp =  (initial_temp - 32) * (5/9) + 273.15 
-        print(converted_temp)
+        print(math.ceil(converted_temp*pow(10,2))/pow(10,2))
     def K_to_C(initial_temp):
         converted_temp = initial_temp -273.15
-        print(converted_temp)
+        print(math.ceil(converted_temp*pow(10,2))/pow(10,2))
     def K_to_F(initial_temp):
         converted_temp = (initial_temp - 273.15) * 1.8 + 32
-        print(converted_temp)
+        print(math.ceil(converted_temp*pow(10,2))/pow(10,2))
     #the if else statements to use the functions
     if temp == "F" and new_temp == "C":
         F_to_C(initial_temp)
